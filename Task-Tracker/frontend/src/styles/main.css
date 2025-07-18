@@ -1,0 +1,30 @@
+/* frontend/src/styles/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  
+  input, textarea, select {
+    @apply border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700;
+  }
+}

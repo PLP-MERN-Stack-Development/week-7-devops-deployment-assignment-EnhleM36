@@ -1,0 +1,29 @@
+/* frontend/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Custom styles */
+.task-card {
+  @apply bg-white rounded-lg shadow-md p-4 mb-4 hover:shadow-lg transition-shadow duration-200;
+}
+
+.task-completed {
+  @apply border-l-4 border-green-500;
+}
+
+.task-high-priority {
+  @apply border-l-4 border-red-500;
+}
+
+.task-medium-priority {
+  @apply border-l-4 border-yellow-500;
+}
+
+.task-low-priority {
+  @apply border-l-4 border-blue-500;
+}
